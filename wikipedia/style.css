@@ -1,0 +1,98 @@
+:root {
+    --beige: rgb(198, 194, 180);
+    --beigeclaro: rgb(213, 210, 199);
+    --amarelo:rgb(224, 224, 211);
+    --azulescuro:  rgb(21, 47, 71);
+    --azulmedio:  rgb(41, 73, 100);
+    --azulcaro: rgb(52, 89, 119);
+
+    --texto: var(--beige);
+    --titulo: var(--beigeclaro);
+    --acento: var(--amarelo);
+    --fundo1: var(--azulescuro);
+    --fundo2: var(--azulmedio);
+    --fundo3: var(--azulcaro); 
+
+
+}
+body{
+    font-family: sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: var(--fundo1);
+    color: var(--texto);
+}
+
+h1, h2 {
+    color: var(--titulo);
+}
+
+header, footer {
+    background-color: var(--fundo2);
+    padding: 20px;
+    text-align: center;
+    color: var(--titulo);
+}
+
+main{
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: var(--fundo2);
+    box-shadow: 0 0 5px var(--fundo2);
+}
+
+nav {
+    background-color: var(--fundo3);
+    padding: 1px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--texto);
+
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+nav ul li a {
+        border-radius: 3px;
+        display: flex;
+        padding: 15px 10px 15px 10px;
+        font-weight: bold;
+}
+nav ul li a:hover {
+    color: var(--acento);
+    background-color: var(--fundo2);
+}
+section ul li {
+    list-style-type: circle;
+    margin: 10px;
+    color: var(--titulo);
+}
+button{
+    color: var(--texto);
+    background-color: var(--fundo2);
+    border-color: var(--fundo3);
+}
+button:hover {
+    color: var(--titulo);
+    background-color: var(--fundo1);
+    border-color: var(--fundo2);
+}
+a{
+    color: var(--acento);
+}
+table{
+color: var(--fundo2);
+background-color: var(--texto);
+border-color: var(--acento);
+}
+table caption{
+    color: var(--titulo);
+    font-weight: bold;
+}
